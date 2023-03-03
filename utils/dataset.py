@@ -153,7 +153,7 @@ def make_optic_flow(frame_folder, flow_folder, img_format=DatasetParam.img_fmt):
     # useful when `TrainParam.use_deep_matching_gpu` is True
     if DatasetParam.optic_flow_method == 'dm_df2' and TrainParam.use_deep_matching_gpu:
         dm_gpu = "opticFlow/web_gpudm_1.0_compiled/deep_matching_gpu_folder.py"  # DeepMatching GPU python script
-        run(["python2", dm_gpu,
+        run(["python", dm_gpu,
              '--frame-folder', frame_folder, '--output-folder', flow_folder,
              '--intervals', *[str(x) for x in intervals],
              '-GPU', '--use_sparse', '--ngh_rad', '256'])
