@@ -7,7 +7,7 @@ class DatasetParam:
 
     use_video = True  # Style transfer with a video or an image. True: video; False: image
     content_img_path = r'demo/dog.jpg'
-    video_path = r'demo/CaseStudy01_Chasing_the_feeling_v011.mp4'
+    video_path = r'demo/CaseStudy01_Chasing_the_feeling_v011_960pxCut.mp4'
     style_img_path = r'demo/PaintingStrokes_03.png'
 
     img_fmt = 'jpg'  # frame image format
