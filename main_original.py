@@ -35,10 +35,7 @@ def preparation():
         # convert video to frames
         video_to_frames(DatasetParam.video_path, TrainParam.video_frames_dir)
         if TrainParam.use_optic_flow:
-            optic_flow_path = join(TrainParam.video_optic_flow_dir, '*.flo')
-            existing_flow_files = glob.glob(optic_flow_path)
-            if not existing_flow_files:
-                make_optic_flow(TrainParam.video_frames_dir, TrainParam.video_optic_flow_dir)
+            make_optic_flow(TrainParam.video_frames_dir, TrainParam.video_optic_flow_dir)
 
     return
 
