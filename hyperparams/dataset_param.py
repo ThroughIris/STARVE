@@ -6,8 +6,8 @@ class DatasetParam:
     img_h = 1280  # image height, should be EVEN, or the final .mp4 video may be crashed
 
     use_video = True  # Style transfer with a video or an image. True: video; False: image
-    content_img_path = r'demo/dog.jpg'
-    video_path = r'demo/CaseStudy02_alone_v017.mp4'
+    content_img_path = r'demo/CaseStudy02_alone_v018_Still.jpg'
+    video_path = r'demo/CaseStudy02_alone_v018_ShortTest.mp4'
     style_img_path = r'demo/GraphicDesign_14.jpg'
 
     img_fmt = 'jpg'  # frame image format
