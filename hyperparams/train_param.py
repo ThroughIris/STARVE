@@ -2,8 +2,8 @@ class TrainParam:
     """
     Hyper-parameters for main.py
     """
-    n_step = 10  # number of iterations for one frame
-    draw_step = 20  # draw intermediate result for debugging
+    n_step = 15  # number of iterations for one frame
+    draw_step = 15  # draw intermediate result for debugging
 
     # paths
     output_dir = 'output'  # output root folder
