@@ -7,8 +7,8 @@ class DatasetParam:
 
     use_video = True  # Style transfer with a video or an image. True: video; False: image
     content_img_path = r'demo/dog.jpg'
-    video_path = r'demo/CaseStudy01_Chasing_the_feeling_v012_960pxCut.mp4'
-    style_img_path = r'demo/PaintingStrokes_03.png'
+    video_path = r'demo/CaseStudy02_alone_v017.mp4'
+    style_img_path = r'demo/GraphicDesign_14.jpg'
 
     img_fmt = 'jpg'  # frame image format
     video_fps = 30  # select `video_fps` frames per second
@@ -18,7 +18,7 @@ class DatasetParam:
     # 'df2': DeepFlow2 only, 2~3s per frame
     # 'std': Sparse to Dense, 10 fps
     # 'liteF': liteFlowNet
-    optic_flow_method = 'dm_df2'
+    optic_flow_method = 'std'
 
     # method to initialize the stylized image
     # useful when not using multi-pass,
