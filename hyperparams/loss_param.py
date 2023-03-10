@@ -3,8 +3,8 @@ class LossParam:
     Hyper-parameters for utils/losses.py
     """
     content_weight = 5  # alpha
-    style_weight = 100  # beta
-    tv_weight = 200  # total variation loss weight
+    style_weight = 10000  # beta
+    tv_weight = 0.001  # total variation loss weight
 
     temporal_weight = 0.001  # gamma
     J = [1, 10, 20, 40]  # long-term consistency chosen frame
